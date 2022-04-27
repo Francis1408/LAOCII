@@ -1,0 +1,9 @@
+pratica_1_p1/*
+pratica_1_p2/*
+
+!.gitignore
+!*.v
+!*.png
+!*.qpf
+!*.bmp
+!*.do
