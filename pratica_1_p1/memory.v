@@ -13,6 +13,8 @@ reg [7:0] data_in;
 
 initial
 begin
+
+	// Escrita
 	wren = 1;
 	address = 8'b00001111;
 	data_in = 8'b00011110; //30 numero de chamada
@@ -23,6 +25,7 @@ begin
 	data_in = 8'b00000011; // 3 numero de chamada
 	#100;
 	
+	// Leitura
 	wren = 0;
 	address = 8'b00001111;
 	#150;
@@ -35,7 +38,7 @@ begin
 end
 
 
-
+// Modulo de acessoa 'a memoria
 ram_memory  _RAM_ (address,clock,data_in,wren,data_out);
 
 

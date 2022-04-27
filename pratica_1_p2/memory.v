@@ -19,15 +19,13 @@ begin
 end
 
 
+// Contador para percorrer todas as posicoes da memoria
 always @(posedge clock)
 begin
 	address = address + 1;
 end
 
-
-
-
-
+// Módulo LPM
 ram_memory  _RAM_ (address,clock,data_in,wren,data_out);
 
 
