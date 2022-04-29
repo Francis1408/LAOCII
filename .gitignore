@@ -6,6 +6,7 @@ pratica_1_p3/*
 !*.v
 !*.png
 !*.qpf
+!*.qsf
 !*.bmp
 !*.do
 !*.mif
