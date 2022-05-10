@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="multicicle_processor">
+		<CBX_INST_ENTRY INSTANCE_NAME="|multicicle_processor|RAM:_RAM_|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_noc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multicicle_processor|ROM:_ROM_|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_8vb1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

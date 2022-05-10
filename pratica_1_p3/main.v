@@ -1,8 +1,3 @@
-
-
-
-
-
 module main (clock, instruction, miss, wback, data_out) ;
 
 input clock;

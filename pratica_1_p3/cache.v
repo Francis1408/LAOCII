@@ -31,8 +31,15 @@ reg [2:0] tag;
 
 initial 
 begin
-	index = 2'b00;
-	cache[00] = 9'b000000000;
+	cache[0] = 9'b000100001;
+	cache[1] = 9'b101000011;
+	cache[2] = 9'b110101101;
+	cache[3] = 9'b0zzzzzzzz;
+	cache[4] = 9'b000zzz010;
+	cache[5] = 9'b000zzz100;
+	cache[6] = 9'b101111110;
+	cache[7] = 9'b0zzzzzzzz;
+
 end
 
 
@@ -181,3 +188,9 @@ end
 
 
 endmodule
+
+
+
+
+
+

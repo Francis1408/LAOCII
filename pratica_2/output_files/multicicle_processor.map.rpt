@@ -1,0 +1,335 @@
+Analysis & Synthesis report for multicicle_processor
+Fri May 06 15:13:49 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis IP Cores Summary
+  6. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Fri May 06 15:13:49 2022               ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; multicicle_processor                            ;
+; Top-level Entity Name              ; multicicle_processor                            ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                            ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Option                                                                     ; Setting              ; Default Value        ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Device                                                                     ; EP2C35F672C6         ;                      ;
+; Top-level entity name                                                      ; multicicle_processor ; multicicle_processor ;
+; Family name                                                                ; Cyclone II           ; Cyclone IV GX        ;
+; Use smart compilation                                                      ; Off                  ; Off                  ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                   ; On                   ;
+; Enable compact report table                                                ; Off                  ; Off                  ;
+; Restructure Multiplexers                                                   ; Auto                 ; Auto                 ;
+; Create Debugging Nodes for IP Cores                                        ; Off                  ; Off                  ;
+; Preserve fewer node names                                                  ; On                   ; On                   ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                  ; Off                  ;
+; Verilog Version                                                            ; Verilog_2001         ; Verilog_2001         ;
+; VHDL Version                                                               ; VHDL_1993            ; VHDL_1993            ;
+; State Machine Processing                                                   ; Auto                 ; Auto                 ;
+; Safe State Machine                                                         ; Off                  ; Off                  ;
+; Extract Verilog State Machines                                             ; On                   ; On                   ;
+; Extract VHDL State Machines                                                ; On                   ; On                   ;
+; Ignore Verilog initial constructs                                          ; Off                  ; Off                  ;
+; Iteration limit for constant Verilog loops                                 ; 5000                 ; 5000                 ;
+; Iteration limit for non-constant Verilog loops                             ; 250                  ; 250                  ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                   ; On                   ;
+; Infer RAMs from Raw Logic                                                  ; On                   ; On                   ;
+; Parallel Synthesis                                                         ; On                   ; On                   ;
+; DSP Block Balancing                                                        ; Auto                 ; Auto                 ;
+; NOT Gate Push-Back                                                         ; On                   ; On                   ;
+; Power-Up Don't Care                                                        ; On                   ; On                   ;
+; Remove Redundant Logic Cells                                               ; Off                  ; Off                  ;
+; Remove Duplicate Registers                                                 ; On                   ; On                   ;
+; Ignore CARRY Buffers                                                       ; Off                  ; Off                  ;
+; Ignore CASCADE Buffers                                                     ; Off                  ; Off                  ;
+; Ignore GLOBAL Buffers                                                      ; Off                  ; Off                  ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                  ; Off                  ;
+; Ignore LCELL Buffers                                                       ; Off                  ; Off                  ;
+; Ignore SOFT Buffers                                                        ; On                   ; On                   ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                  ; Off                  ;
+; Optimization Technique                                                     ; Balanced             ; Balanced             ;
+; Carry Chain Length                                                         ; 70                   ; 70                   ;
+; Auto Carry Chains                                                          ; On                   ; On                   ;
+; Auto Open-Drain Pins                                                       ; On                   ; On                   ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                  ; Off                  ;
+; Auto ROM Replacement                                                       ; On                   ; On                   ;
+; Auto RAM Replacement                                                       ; On                   ; On                   ;
+; Auto Shift Register Replacement                                            ; Auto                 ; Auto                 ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                 ; Auto                 ;
+; Auto Clock Enable Replacement                                              ; On                   ; On                   ;
+; Strict RAM Replacement                                                     ; Off                  ; Off                  ;
+; Allow Synchronous Control Signals                                          ; On                   ; On                   ;
+; Force Use of Synchronous Clear Signals                                     ; Off                  ; Off                  ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                  ; Off                  ;
+; Auto Resource Sharing                                                      ; Off                  ; Off                  ;
+; Allow Any RAM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any ROM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any Shift Register Size For Recognition                              ; Off                  ; Off                  ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                   ; On                   ;
+; Ignore translate_off and synthesis_off directives                          ; Off                  ; Off                  ;
+; Timing-Driven Synthesis                                                    ; Off                  ; Off                  ;
+; Report Parameter Settings                                                  ; On                   ; On                   ;
+; Report Source Assignments                                                  ; On                   ; On                   ;
+; Report Connectivity Checks                                                 ; On                   ; On                   ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                  ; Off                  ;
+; Synchronization Register Chain Length                                      ; 2                    ; 2                    ;
+; PowerPlay Power Optimization                                               ; Normal compilation   ; Normal compilation   ;
+; HDL message level                                                          ; Level2               ; Level2               ;
+; Suppress Register Optimization Related Messages                            ; Off                  ; Off                  ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                 ; 5000                 ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                 ; 5000                 ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                  ; 100                  ;
+; Clock MUX Protection                                                       ; On                   ; On                   ;
+; Auto Gated Clock Conversion                                                ; Off                  ; Off                  ;
+; Block Design Naming                                                        ; Auto                 ; Auto                 ;
+; SDC constraint protection                                                  ; Off                  ; Off                  ;
+; Synthesis Effort                                                           ; Auto                 ; Auto                 ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                   ; On                   ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                  ; Off                  ;
+; Analysis & Synthesis Message Level                                         ; Medium               ; Medium               ;
+; Disable Register Merging Across Hierarchies                                ; Auto                 ; Auto                 ;
+; Resource Aware Inference For Block RAM                                     ; On                   ; On                   ;
+; Synthesis Seed                                                             ; 1                    ; 1                    ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                             ;
++--------+--------------+---------+--------------+--------------+---------------------------------+---------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                 ; IP Include File                 ;
++--------+--------------+---------+--------------+--------------+---------------------------------+---------------------------------+
+; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |multicicle_processor|RAM:_RAM_ ; C:/AOC_2/LAOCII/pratica_2/RAM.v ;
+; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |multicicle_processor|ROM:_ROM_ ; C:/AOC_2/LAOCII/pratica_2/rom.v ;
++--------+--------------+---------+--------------+--------------+---------------------------------+---------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri May 06 15:13:47 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multicicle_processor -c multicicle_processor
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file multicicle_processor.v
+    Info (12023): Found entity 1: multicicle_processor
+Info (12021): Found 1 design units, including 1 entities, in source file processor.v
+    Info (12023): Found entity 1: Processor
+Info (12021): Found 1 design units, including 1 entities, in source file ram.v
+    Info (12023): Found entity 1: RAM
+Info (12021): Found 1 design units, including 1 entities, in source file a.v
+    Info (12023): Found entity 1: A
+Info (12021): Found 1 design units, including 1 entities, in source file addr.v
+    Info (12023): Found entity 1: ADDR
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 1 design units, including 1 entities, in source file controlunit.v
+    Info (12023): Found entity 1: ControlUnit
+Info (12021): Found 1 design units, including 1 entities, in source file dout.v
+    Info (12023): Found entity 1: DOUT
+Info (12021): Found 1 design units, including 1 entities, in source file g.v
+    Info (12023): Found entity 1: G
+Info (12021): Found 1 design units, including 1 entities, in source file mux16x2.v
+    Info (12023): Found entity 1: Mux16x2
+Info (12021): Found 1 design units, including 1 entities, in source file mux16x4.v
+    Info (12023): Found entity 1: Mux16x4
+Info (12021): Found 1 design units, including 1 entities, in source file mux3x2.v
+    Info (12023): Found entity 1: Mux3x2
+Info (12021): Found 1 design units, including 1 entities, in source file regbank.v
+    Info (12023): Found entity 1: RegBank
+Info (12021): Found 1 design units, including 1 entities, in source file stepcounter.v
+    Info (12023): Found entity 1: StepCounter
+Info (12127): Elaborating entity "multicicle_processor" for the top level hierarchy
+Info (12128): Elaborating entity "Processor" for hierarchy "Processor:_CPU_"
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "Processor:_CPU_|ControlUnit:_CTRLUNIT_"
+Warning (10270): Verilog HDL Case Statement warning at ControlUnit.v(42): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at ControlUnit.v(73): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at ControlUnit.v(162): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at ControlUnit.v(204): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at ControlUnit.v(244): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "done", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "reg_selection", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "mux_selector", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "reg_write", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "a_write", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "g_write", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "alu_opcode", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "ir_write", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "dout_write", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "addr_write", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "mem_write", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "din_selector", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(38): inferring latch(es) for variable "increment_pc", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "increment_pc" at ControlUnit.v(38)
+Info (10041): Inferred latch for "din_selector" at ControlUnit.v(38)
+Info (10041): Inferred latch for "mem_write" at ControlUnit.v(38)
+Info (10041): Inferred latch for "addr_write" at ControlUnit.v(38)
+Info (10041): Inferred latch for "dout_write" at ControlUnit.v(38)
+Info (10041): Inferred latch for "ir_write" at ControlUnit.v(38)
+Info (10041): Inferred latch for "alu_opcode[0]" at ControlUnit.v(38)
+Info (10041): Inferred latch for "alu_opcode[1]" at ControlUnit.v(38)
+Info (10041): Inferred latch for "alu_opcode[2]" at ControlUnit.v(38)
+Info (10041): Inferred latch for "alu_opcode[3]" at ControlUnit.v(38)
+Info (10041): Inferred latch for "g_write" at ControlUnit.v(38)
+Info (10041): Inferred latch for "a_write" at ControlUnit.v(38)
+Info (10041): Inferred latch for "reg_write" at ControlUnit.v(38)
+Info (10041): Inferred latch for "mux_selector[0]" at ControlUnit.v(38)
+Info (10041): Inferred latch for "mux_selector[1]" at ControlUnit.v(38)
+Info (10041): Inferred latch for "reg_selection" at ControlUnit.v(38)
+Info (10041): Inferred latch for "done" at ControlUnit.v(38)
+Info (12128): Elaborating entity "Mux3x2" for hierarchy "Processor:_CPU_|Mux3x2:_MUX3X2_"
+Info (12128): Elaborating entity "Mux16x4" for hierarchy "Processor:_CPU_|Mux16x4:_MUX16X4_"
+Warning (10270): Verilog HDL Case Statement warning at Mux16x4.v(9): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at Mux16x4.v(9): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "out[0]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[1]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[2]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[3]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[4]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[5]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[6]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[7]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[8]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[9]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[10]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[11]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[12]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[13]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[14]" at Mux16x4.v(9)
+Info (10041): Inferred latch for "out[15]" at Mux16x4.v(9)
+Info (12128): Elaborating entity "RegBank" for hierarchy "Processor:_CPU_|RegBank:_RB_"
+Warning (10240): Verilog HDL Always Construct warning at RegBank.v(26): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct
+Info (12128): Elaborating entity "A" for hierarchy "Processor:_CPU_|A:_AREG_"
+Info (12128): Elaborating entity "ALU" for hierarchy "Processor:_CPU_|ALU:_ALU_"
+Warning (10272): Verilog HDL Case Statement warning at ALU.v(40): case item expression covers a value already covered by a previous case item
+Info (12128): Elaborating entity "G" for hierarchy "Processor:_CPU_|G:_GREG_"
+Info (12128): Elaborating entity "StepCounter" for hierarchy "Processor:_CPU_|StepCounter:_STEPCOUNTER_"
+Warning (10230): Verilog HDL assignment warning at StepCounter.v(13): truncated value with size 32 to match size of target (2)
+Info (12128): Elaborating entity "ADDR" for hierarchy "Processor:_CPU_|ADDR:_ADDR_"
+Info (12128): Elaborating entity "DOUT" for hierarchy "Processor:_CPU_|DOUT:_DOUT_"
+Info (12128): Elaborating entity "Mux16x2" for hierarchy "Mux16x2:_MUX16X2_"
+Warning (12125): Using design file rom.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ROM
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:_ROM_"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM:_ROM_|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "ROM:_ROM_|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "ROM:_ROM_|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "inst_mem.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=NONE"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "ram_block_type" = "M4K"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "16"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8vb1.tdf
+    Info (12023): Found entity 1: altsyncram_8vb1
+Info (12128): Elaborating entity "altsyncram_8vb1" for hierarchy "ROM:_ROM_|altsyncram:altsyncram_component|altsyncram_8vb1:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_n5b2.tdf
+    Info (12023): Found entity 1: altsyncram_n5b2
+Info (12128): Elaborating entity "altsyncram_n5b2" for hierarchy "ROM:_ROM_|altsyncram:altsyncram_component|altsyncram_8vb1:auto_generated|altsyncram_n5b2:altsyncram1"
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "ROM:_ROM_|altsyncram:altsyncram_component|altsyncram_8vb1:auto_generated|sld_mod_ram_rom:mgl_prim2"
+Info (12130): Elaborated megafunction instantiation "ROM:_ROM_|altsyncram:altsyncram_component|altsyncram_8vb1:auto_generated|sld_mod_ram_rom:mgl_prim2"
+Info (12133): Instantiated megafunction "ROM:_ROM_|altsyncram:altsyncram_component|altsyncram_8vb1:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter:
+    Info (12134): Parameter "CVALUE" = "0000000000000000"
+    Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
+    Info (12134): Parameter "IS_READABLE" = "1"
+    Info (12134): Parameter "NODE_NAME" = "0"
+    Info (12134): Parameter "NUMWORDS" = "256"
+    Info (12134): Parameter "SHIFT_COUNT_BITS" = "5"
+    Info (12134): Parameter "WIDTH_WORD" = "16"
+    Info (12134): Parameter "WIDTHAD" = "8"
+Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "ROM:_ROM_|altsyncram:altsyncram_component|altsyncram_8vb1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr"
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:_RAM_"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM:_RAM_|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "RAM:_RAM_|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "RAM:_RAM_|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "M4K"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "16"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_noc1.tdf
+    Info (12023): Found entity 1: altsyncram_noc1
+Info (12128): Elaborating entity "altsyncram_noc1" for hierarchy "RAM:_RAM_|altsyncram:altsyncram_component|altsyncram_noc1:auto_generated"
+Error (12006): Node instance "ir" instantiates undefined entity "IR_IRREG_" File: C:/AOC_2/LAOCII/pratica_2/Processor.v Line: 114
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 25 warnings
+    Error: Peak virtual memory: 4642 megabytes
+    Error: Processing ended: Fri May 06 15:13:49 2022
+    Error: Elapsed time: 00:00:02
+    Error: Total CPU time (on all processors): 00:00:01
+
+

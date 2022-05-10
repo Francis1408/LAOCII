@@ -1,6 +1,3 @@
-
-
-
 module memory(clock,data_out);
 
 

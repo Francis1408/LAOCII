@@ -1,6 +1,3 @@
-
-
-
 module memory(clock,data_out);
 
 
@@ -40,8 +37,3 @@ end
 
 // Modulo de acessoa 'a memoria
 ram_memory  _RAM_ (address,clock,data_in,wren,data_out);
-
-
-
-
-endmodule
