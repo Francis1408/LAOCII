@@ -1,4 +1,0 @@
-
-
-
-module mux_merge(clock, intruction, reg_a, reg_b, data_b, reg_c, data_c)

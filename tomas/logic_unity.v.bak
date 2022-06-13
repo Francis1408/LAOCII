@@ -1,9 +1,0 @@
-
-
-
-module logic_unity(clock, instruction);
-
-
-
-
-endmodule
